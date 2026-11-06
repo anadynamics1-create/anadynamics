@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANADynamics | Industrial Automation &amp; Robotics Consultancy</title>
+  <meta name="description" content="ANADynamics delivers tailored automation and robotics consultancy for process and power industries: PLC logic engineering, HMI/SCADA graphics, hardware design and end-to-end industrial integration.">
+  <meta name="keywords" content="industrial automation, robotics consultancy, PLC programming, ladder logic, function block, HMI, SCADA, Modbus, Profibus, OPC UA, panel design, I/O mapping, substation automation, process industry, power industry">
+  <meta name="theme-color" content="#0a0a0b">
+  <!-- TODO: replace with your live domain -->
+  <link rel="canonical" href="https://www.anadynamics.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ANADynamics">
+  <meta property="og:title" content="ANADynamics | Smart Automation &amp; Robotics for Industry">
+  <meta property="og:description" content="Tailored automation solutions, graphic and logical engineering, and end-to-end industrial integration.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ANADynamics | Smart Automation &amp; Robotics for Industry">
+  <meta name="twitter:description" content="Tailored automation solutions, graphic and logical engineering, and end-to-end industrial integration.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ANADynamics",
+    "description": "Automation and robotics consultancy for process and power industries.",
+    "email": "anadynamics1@gmail.com",
+    "telephone": "+91-9591557311",
+    "logo": "assets/images/logo-full.png",
+    "founder": { "@type": "Person", "name": "Somashekhar S. Anad" },
+    "areaServed": "TODO",
+    "knowsAbout": ["PLC programming","HMI/SCADA","Modbus","Profibus","OPC UA","Panel design","Substation automation"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= ICON SPRITE ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F2B77A"/><stop offset=".55" stop-color="#D98A4A"/><stop offset="1" stop-color="#B9622C"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-logic" viewBox="0 0 24 24"><path d="M3 5v14M21 5v14M3 9h4M10 9h4M17 9h4M3 15h6M15 15h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 7v4M10 7v4M14 7l3 4M14 11l3-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-hmi" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5 13l3-3 3 2 4-5 4 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 8h16M4 15h16" stroke="currentColor" stroke-width="1.6"/><path d="M7 4.5v2M9.5 4.5v2M12 4.5v2M7 10.5v2.5M10 10.5v2.5M13 10.5v2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="18.5" r="1" fill="currentColor"/><circle cx="11" cy="18.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 21V10l6 4V10l6 4V6l2-3h2l2 3v15H2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 17h2M11 17h2M16 17h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="9.5" y="9.5" width="5" height="5" fill="currentColor"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 13l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8 19l-4 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+
+    <!-- Large gear used in hero background -->
+    <symbol id="gear-big" viewBox="0 0 200 200">
+      <path fill="none" stroke="currentColor" stroke-width="2" d="M100 20l9 0 4 18a64 64 0 0 1 17 7l16-10 13 13-10 16a64 64 0 0 1 7 17l18 4v18l-18 4a64 64 0 0 1-7 17l10 16-13 13-16-10a64 64 0 0 1-17 7l-4 18H91l-4-18a64 64 0 0 1-17-7l-16 10-13-13 10-16a64 64 0 0 1-7-17l-18-4V91l18-4a64 64 0 0 1 7-17L41 54l13-13 16 10a64 64 0 0 1 17-7l4-18z"/>
+      <circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="brand" aria-label="ANADynamics home">
+        <img src="assets/images/logo-mark-sm.png" alt="" width="87" height="96" class="brand-mark">
+        <span class="brand-text">ANA<span>Dynamics</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#industries" class="nav-link">Industries</a></li>
+        <li><a href="#founder" class="nav-link">Founder</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Free Consultation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid"></div>
+        <svg class="gear g1"><use href="#gear-big"/></svg>
+        <svg class="gear g2"><use href="#gear-big"/></svg>
+        <svg class="traces" viewBox="0 0 1200 700" preserveAspectRatio="none">
+          <path d="M0 520h220l40-40h260"/><path d="M1200 160H980l-40 40H700"/><path d="M0 610h140l30 30h300"/><path d="M1200 600h-260l-40-40H760"/>
+        </svg>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Automation &amp; Robotics Consultancy</p>
+          <h1 id="hero-title">Empowering Industries with <span class="copper">Smart Automation</span> &amp; Robotics</h1>
+          <ul class="pillars" aria-label="What we deliver">
+            <li>Tailored Automation Solutions</li>
+            <li>Graphic &amp; Logical Engineering</li>
+            <li>End-to-End Industrial Integration</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg>Book a Free Consultation</a>
+            <a href="#services" class="btn btn-ghost">Explore Services <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="emblem">
+            <div class="ring r1"></div><div class="ring r2"></div><div class="glow"></div>
+            <img src="assets/images/logo-mark.png" alt="" width="328" height="360" fetchpriority="high">
+          </div>
+          <img class="wordmark" src="assets/images/logo-wordmark.png" alt="" width="600" height="60">
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ================= TICKER ================= -->
+    <div class="ticker" aria-hidden="true"><div class="track">
+      <span>Ladder Logic</span><span>Function Block</span><span>Modbus</span><span>Profibus</span><span>OPC UA</span><span>HMI / SCADA</span><span>Alarm &amp; Trend</span><span>Panel Design</span><span>I/O Mapping</span><span>Instrumentation</span><span>Substation Automation</span>
+      <span>Ladder Logic</span><span>Function Block</span><span>Modbus</span><span>Profibus</span><span>OPC UA</span><span>HMI / SCADA</span><span>Alarm &amp; Trend</span><span>Panel Design</span><span>I/O Mapping</span><span>Instrumentation</span><span>Substation Automation</span>
+    </div></div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="reveal">
+          <p class="kicker">About Us</p>
+          <h2 id="about-title">Logic, graphics and hardware: engineered as one system.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lead">At ANADynamics, we specialize in automation and robotics consultancy for the process and power industries.</p>
+          <p>From intelligent logic building to cutting-edge HMI/SCADA graphics, we deliver hardware-compatible, future-proof solutions tailored to each plant, from the field device to the operator screen.</p>
+          <ul class="mini-pillars">
+            <li><svg aria-hidden="true"><use href="#i-target"/></svg>Tailored</li>
+            <li><svg aria-hidden="true"><use href="#i-link"/></svg>Hardware-compatible</li>
+            <li><svg aria-hidden="true"><use href="#i-shield"/></svg>Future-proof</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="head reveal">
+          <p class="kicker">Services</p>
+          <h2 id="services-title">What we engineer.</h2>
+          <p class="sub">Four disciplines that cover the full automation stack.</p>
+        </header>
+        <div class="services">
+          <article class="service reveal" data-service="logic">
+            <span class="num">01</span>
+            <div class="s-ic"><svg aria-hidden="true"><use href="#i-logic"/></svg></div>
+            <h3>Automation Logic Engineering</h3>
+            <ul class="ticks">
+              <li>Custom ladder logic and function block programming</li>
+              <li>Protocol integration: Modbus, Profibus, OPC UA</li>
+            </ul>
+            <button class="more" type="button">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <template>
+              <p>Control logic that is structured, readable and built around how your process actually runs.</p>
+              <h4>Scope</h4>
+              <ul class="ticks">
+                <li>Custom ladder logic (LAD) programming</li>
+                <li>Function block (FBD) programming</li>
+                <li>Integration over Modbus, Profibus and OPC UA</li>
+              </ul>
+              <h4>Outcome</h4>
+              <p>Reliable, maintainable control logic that communicates cleanly with the rest of your system.</p>
+            </template>
+          </article>
+
+          <article class="service reveal" data-service="hmi">
+            <span class="num">02</span>
+            <div class="s-ic"><svg aria-hidden="true"><use href="#i-hmi"/></svg></div>
+            <h3>HMI/SCADA Graphics Solutions</h3>
+            <ul class="ticks">
+              <li>Process visualization</li>
+              <li>Alarm and trend analysis</li>
+              <li>Dashboard interfaces</li>
+            </ul>
+            <button class="more" type="button">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <template>
+              <p>Operator screens that make the process clear at a glance and help teams act fast.</p>
+              <h4>Scope</h4>
+              <ul class="ticks">
+                <li>Process visualization and graphics design</li>
+                <li>Alarm and trend analysis</li>
+                <li>Dashboard interfaces</li>
+              </ul>
+              <h4>Outcome</h4>
+              <p>Clear, consistent HMI/SCADA graphics that support better operational decisions.</p>
+            </template>
+          </article>
+
+          <article class="service reveal" data-service="hardware">
+            <span class="num">03</span>
+            <div class="s-ic"><svg aria-hidden="true"><use href="#i-panel"/></svg></div>
+            <h3>Hardware Design &amp; Compatibility</h3>
+            <ul class="ticks">
+              <li>Panel design and wiring</li>
+              <li>I/O mapping and sensor integration</li>
+              <li>Pneumatics and instrumentation</li>
+            </ul>
+            <button class="more" type="button">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <template>
+              <p>Hardware designed to match the logic, so field devices, panels and controllers work together from day one.</p>
+              <h4>Scope</h4>
+              <ul class="ticks">
+                <li>Control panel design and wiring</li>
+                <li>I/O mapping and sensor integration</li>
+                <li>Pneumatics and instrumentation</li>
+              </ul>
+              <h4>Outcome</h4>
+              <p>Hardware-compatible systems that are easier to commission and maintain.</p>
+            </template>
+          </article>
+
+          <article class="service reveal" data-service="industry">
+            <span class="num">04</span>
+            <div class="s-ic"><svg aria-hidden="true"><use href="#i-factory"/></svg></div>
+            <h3>Industry-Specific Solutions</h3>
+            <ul class="ticks">
+              <li>Process industries: food, pharma, oil and gas</li>
+              <li>Power industries: substation automation, control rooms</li>
+            </ul>
+            <button class="more" type="button">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <template>
+              <p>Solutions shaped around the requirements of each sector.</p>
+              <h4>Process industries</h4>
+              <ul class="ticks"><li>Food</li><li>Pharma</li><li>Oil and gas</li></ul>
+              <h4>Power industries</h4>
+              <ul class="ticks"><li>Substation automation</li><li>Control rooms</li></ul>
+            </template>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INDUSTRIES ================= -->
+    <section class="section" id="industries" aria-labelledby="ind-title">
+      <div class="container">
+        <header class="head reveal">
+          <p class="kicker">Industries</p>
+          <h2 id="ind-title">Built for process and power.</h2>
+        </header>
+        <div class="tabs reveal" role="tablist" aria-label="Industries">
+          <button class="tab is-active" role="tab" id="tab-process" aria-selected="true" aria-controls="panel-process">
+            <svg class="ic" aria-hidden="true"><use href="#i-factory"/></svg>Process Industries</button>
+          <button class="tab" role="tab" id="tab-power" aria-selected="false" aria-controls="panel-power" tabindex="-1">
+            <svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg>Power Industries</button>
+        </div>
+        <div class="panel reveal" role="tabpanel" id="panel-process" aria-labelledby="tab-process">
+          <div class="ind-grid">
+            <div class="ind"><span>01</span><h3>Food</h3><p>Automation logic, visualization and hardware integration for food processing operations.</p></div>
+            <div class="ind"><span>02</span><h3>Pharma</h3><p>Structured control and clear operator interfaces for pharmaceutical processes.</p></div>
+            <div class="ind"><span>03</span><h3>Oil &amp; Gas</h3><p>Protocol integration, instrumentation and SCADA graphics for oil and gas facilities.</p></div>
+          </div>
+        </div>
+        <div class="panel reveal" role="tabpanel" id="panel-power" aria-labelledby="tab-power" hidden>
+          <div class="ind-grid two">
+            <div class="ind"><span>01</span><h3>Substation Automation</h3><p>Logic engineering and communication integration for substation automation.</p></div>
+            <div class="ind"><span>02</span><h3>Control Rooms</h3><p>HMI/SCADA graphics, alarms, trends and dashboards for power control rooms.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY / PROCESS ================= -->
+    <section class="section alt" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="head reveal">
+          <p class="kicker">Why ANADynamics</p>
+          <h2 id="why-title">One partner from logic to screen to panel.</h2>
+        </header>
+        <div class="why">
+          <div class="why-card reveal"><svg aria-hidden="true"><use href="#i-target"/></svg><h3>Tailored, not templated</h3><p>Every solution is designed around your process, equipment and operators.</p></div>
+          <div class="why-card reveal"><svg aria-hidden="true"><use href="#i-layers"/></svg><h3>Graphic + logical engineering</h3><p>Control logic and HMI/SCADA graphics developed together for a consistent system.</p></div>
+          <div class="why-card reveal"><svg aria-hidden="true"><use href="#i-link"/></svg><h3>Hardware-compatible</h3><p>Panels, I/O and field devices engineered to work with the control layer.</p></div>
+          <div class="why-card reveal"><svg aria-hidden="true"><use href="#i-shield"/></svg><h3>Future-proof</h3><p>Open protocols such as Modbus, Profibus and OPC UA keep systems ready to grow.</p></div>
+        </div>
+
+        <!-- Suggested workflow: edit to match how you actually engage with clients -->
+        <ol class="steps reveal" aria-label="How we work">
+          <li><span>01</span><h3>Consult</h3><p>Free consultation to understand your process and goals.</p></li>
+          <li><span>02</span><h3>Design</h3><p>Architecture, I/O mapping and hardware selection.</p></li>
+          <li><span>03</span><h3>Engineer</h3><p>Logic programming and HMI/SCADA graphics.</p></li>
+          <li><span>04</span><h3>Integrate</h3><p>Testing, integration and handover.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FOUNDER ================= -->
+    <section class="section" id="founder" aria-labelledby="founder-title">
+      <div class="container founder">
+        <div class="founder-photo reveal">
+          <picture>
+            <source srcset="assets/images/founder.webp" type="image/webp">
+            <img src="assets/images/founder.jpg" alt="Somashekhar S. Anad, founder of ANADynamics" width="600" height="666" loading="lazy">
+          </picture>
+          <span class="tag-float"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Automation Engineer</span>
+        </div>
+        <div class="founder-copy reveal">
+          <p class="kicker">Meet the Founder</p>
+          <h2 id="founder-title">Somashekhar S. Anad</h2>
+          <p class="role">Founder, ANADynamics <!-- TODO: confirm title --></p>
+          <p>An Electronics and Instrumentation engineer with more than three years of hands-on experience in industrial automation, covering DCS, PLC, SCADA/HMI and Industrial IoT.</p>
+          <p>His work spans control system engineering, upgrades and commissioning in the power and process sectors, PLC and HMI programming, control panel design, and multi-protocol data integration.</p>
+          <ul class="chips">
+            <li>DCS</li><li>PLC (LAD / FBD)</li><li>SCADA / HMI</li><li>OPC UA</li><li>Modbus</li><li>Industrial IoT</li><li>Panel Design</li><li>Commissioning</li>
+          </ul>
+          <p class="cred"><svg class="ic" aria-hidden="true"><use href="#i-chip"/></svg>B.E. Electronics &amp; Instrumentation Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CASE STUDIES (hidden until you have content) =================
+    <section class="section alt" id="work">
+      <div class="container">
+        <header class="head"><p class="kicker">Case Studies</p><h2>Selected work.</h2></header>
+        <div class="services">
+          <article class="service">
+            <h3>[TODO: Project title]</h3>
+            <p>[TODO: Client industry, challenge, solution, result. Only publish with client permission.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ================= FAQ ================= -->
+    <section class="section alt" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-wrap">
+        <header class="head reveal">
+          <p class="kicker">FAQ</p>
+          <h2 id="faq-title">Common questions.</h2>
+          <p class="sub">Can't find your answer? <a href="#contact" class="text-link">Ask us directly.</a></p>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>Is the first consultation really free?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Yes. Book a free consultation to discuss your requirements and how we can help.</p>
+          </details>
+          <details>
+            <summary>Which industries do you work with?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Process industries (food, pharma, oil and gas) and power industries, including substation automation and control rooms.</p>
+          </details>
+          <details>
+            <summary>Which communication protocols do you support?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>We integrate systems over Modbus, Profibus and OPC UA.</p>
+          </details>
+          <details>
+            <summary>Can you work with our existing hardware?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Hardware compatibility is central to our approach. We design logic, I/O mapping and panels to fit the equipment you already have, or help you choose new hardware.</p>
+          </details>
+          <details>
+            <summary>Do you handle both programming and HMI/SCADA graphics?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Yes. Graphic and logical engineering are delivered together, from ladder and function block logic to process visualization, alarms, trends and dashboards.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-inner reveal">
+        <h2 id="cta-title">Ready to automate smarter?</h2>
+        <p>Tell us about your plant or project. The first consultation is free.</p>
+        <a href="#contact" class="btn btn-dark"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg>Book a Free Consultation</a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="head reveal">
+          <p class="kicker">Contact Us</p>
+          <h2 id="contact-title">Let's talk about your project.</h2>
+        </header>
+        <div class="contact">
+          <ul class="c-list reveal">
+            <li><a class="c-item" href="mailto:anadynamics1@gmail.com"><span class="c-ic"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>Email</small>anadynamics1@gmail.com</span></a></li>
+            <li><a class="c-item" href="tel:+919591557311"><span class="c-ic"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Phone</small>+91 95915 57311</span></a></li>
+            <!-- TODO: uncomment if this number is on WhatsApp
+            <li><a class="c-item" href="https://wa.me/919591557311" target="_blank" rel="noopener"><span class="c-ic"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></span><span><small>WhatsApp</small>Chat with us</span></a></li>
+            -->
+            <!-- TODO: add your city / office address
+            <li><div class="c-item"><span class="c-ic"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Location</small>City, State, India</span></div></li>
+            -->
+          </ul>
+
+          <form class="form reveal" id="contact-form" novalidate data-endpoint="">
+            <div class="row">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err" id="f-name-err"></p></div>
+              <div class="field"><label for="f-company">Company <span class="opt">(optional)</span></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err" id="f-email-err"></p></div>
+              <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"><p class="err" id="f-phone-err"></p></div>
+            </div>
+            <div class="field">
+              <label for="f-service">Service of interest</label>
+              <select id="f-service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Automation Logic Engineering</option>
+                <option>HMI/SCADA Graphics Solutions</option>
+                <option>Hardware Design &amp; Compatibility</option>
+                <option>Industry-Specific Solutions</option>
+                <option>Not sure yet / Free consultation</option>
+              </select>
+              <p class="err" id="f-service-err"></p>
+            </div>
+            <div class="field"><label for="f-message">Project details</label><textarea id="f-message" name="message" rows="5" required></textarea><p class="err" id="f-message-err"></p></div>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary btn-block" type="submit">Send Request <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <p class="status" role="status" aria-live="polite"></p>
+            <p class="note">Submitting opens your email app with the request pre-filled to anadynamics1@gmail.com.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container f-inner">
+      <div class="f-brand">
+        <img src="assets/images/logo-full.png" alt="ANADynamics" width="240" height="189" loading="lazy">
+        <p>Automation &amp; robotics consultancy for process and power industries.</p>
+      </div>
+      <nav aria-label="Footer"><h3>Company</h3><ul>
+        <li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#industries">Industries</a></li><li><a href="#founder">Founder</a></li><li><a href="#faq">FAQ</a></li>
+      </ul></nav>
+      <div><h3>Contact</h3><ul>
+        <li><a href="mailto:anadynamics1@gmail.com">anadynamics1@gmail.com</a></li>
+        <li><a href="tel:+919591557311">+91 95915 57311</a></li>
+        <!-- TODO: social links, e.g. <li><a href="https://www.linkedin.com/company/..." target="_blank" rel="noopener">LinkedIn</a></li> -->
+      </ul></div>
+      <p class="copy">&copy; <span id="year">2026</span> ANADynamics. All rights reserved.</p>
+    </div>
+    <a href="#home" class="to-top" aria-label="Back to top"><svg class="ic" aria-hidden="true" style="transform:rotate(-90deg)"><use href="#i-arrow"/></svg></a>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="m-title">
+    <button class="m-close" type="button" aria-label="Close">&times;</button>
+    <div class="m-ic" aria-hidden="true"></div>
+    <h3 id="m-title"></h3>
+    <div class="m-body"></div>
+    <a href="#contact" class="btn btn-primary m-cta">Discuss this service <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </dialog>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
